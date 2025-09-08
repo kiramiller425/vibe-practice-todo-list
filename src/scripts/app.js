@@ -11,8 +11,11 @@ function renderTasks() {
     taskList.innerHTML = '';
     tasks.forEach((task, index) => {
         const taskItem = document.createElement('li');
-        taskItem.textContent = task;
-
+        
+        const taskText = document.createElement('span');
+        taskText.textContent = task;
+        taskText.className = 'task-text';
+        
         const deleteButton = document.createElement('button');
         deleteButton.textContent = 'Delete';
         deleteButton.onclick = () => deleteTask(index);
@@ -21,6 +24,7 @@ function renderTasks() {
         editButton.textContent = 'Edit';
         editButton.onclick = () => editTask(index);
 
+        taskItem.appendChild(taskText);
         taskItem.appendChild(editButton);
         taskItem.appendChild(deleteButton);
         taskList.appendChild(taskItem);
