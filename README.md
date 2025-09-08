@@ -1,6 +1,6 @@
 # To Do List Application
 
-This is a simple To Do List application built using vibe coding with Claude Sonnet 3.5 via VSCode. Vanilla JavaScript, CSS, and HTML. The application allows users to create, read, update, and delete tasks.
+This is a simple To Do List application built using vibe coding with Claude Sonnet 3.5, VSCode, vanilla JavaScript, CSS, and HTML. This front-end-only application allows users to create, read, update, and delete tasks (CRUD operations).
 
 ## Project Structure
 
@@ -33,6 +33,8 @@ todo-list-app
 - HTML
 - CSS
 - JavaScript
+- VS Code (IDE)
+- Claude AI Sonnet 3.5 (Development Assistant)
 
 ## License
 
