@@ -1,0 +1,111 @@
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+    color: #2c3e50;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#task-input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.2s ease;
+}
+
+#task-input:focus {
+    outline: none;
+    border-color: #4dabf7;
+    box-shadow: 0 0 0 3px rgba(77, 171, 247, 0.2);
+}
+
+#add-task-button {
+    padding: 12px 24px;
+    background-color: #4dabf7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+#add-task-button:hover {
+    background-color: #3793dd;
+}
+
+#task-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#task-list li {
+    background: white;
+    margin: 8px 0;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#task-list li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#task-list button {
+    margin-left: 8px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+#task-list button:first-of-type {
+    background-color: #4dabf7;
+    color: white;
+}
+
+#task-list button:last-of-type {
+    background-color: #fa5252;
+    color: white;
+}
+
+#task-list button:first-of-type:hover {
+    background-color: #3793dd;
+}
+
+#task-list button:last-of-type:hover {
+    background-color: #e03131;
+}
