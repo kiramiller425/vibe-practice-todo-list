@@ -7,11 +7,11 @@ This is a simple To Do List application built using vibe coding with Claude Sonn
 ```
 todo-list-app
 ├── src
-│   ├── index.html       # Main HTML document
+│   ├── todo.html       # Main HTML document
 │   ├── styles
-│   │   └── main.css     # CSS styles for the application
+│   │   └── todo.css     # CSS styles for the application
 │   └── scripts
-│       └── app.js       # JavaScript code for CRUD operations
+│       └── todo.js       # JavaScript code for CRUD operations
 └── README.md            # Project documentation
 ```
 
@@ -25,7 +25,7 @@ todo-list-app
 ## Getting Started
 
 1. Clone the repository to your local machine.
-2. Open the `src/index.html` file in your web browser to view the application.
+2. Open the `src/todo.html` file in your web browser to view the application.
 3. Use the input field to add new tasks and manage your to-do list.
 
 ## Technologies Used
@@ -39,5 +39,3 @@ todo-list-app
 ## License
 
 This project is open-source and available under the GNU Public License.
-
-

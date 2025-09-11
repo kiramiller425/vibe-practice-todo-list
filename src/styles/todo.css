@@ -1,23 +1,40 @@
+:root {
+    --primary-black: #1a1a1a;
+    --primary-white: #ffffff;
+    --primary-blue: #4a90e2;
+    --primary-yellow: #ffd700;
+    --primary-pink: #ff69b4;
+
+    --primary-green: #55bf00;
+
+    --primary-light-grey: #eeeeee;
+    --primary-dark-grey: #444444;
+    --primary-dark-pink: #b82a71;
+
+    --primary-faded-pink: rgba(255, 105, 180, 0.2);
+    --primary-faded-yellow: rgba(255, 215, 0, 0.2);
+    --primary-faded-green: rgba(85, 191, 0, 0.5);
+}
+
 body {
     font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-    background-color: #f0f0f0;
+    background-color: var(--primary-black);
     margin: 0;
     padding: 20px;
-    color: #222;
+    color: var(--primary-black);
 }
 
 .container {
     max-width: 800px;
     margin: 40px auto;
     padding: 20px;
-    background-color: white;
+    background-color: var(--primary-white);
     border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     text-align: center;
-    color: #222;
+    color: var(--primary-black);
     margin-bottom: 30px;
     font-weight: 600;
 }
@@ -31,7 +48,7 @@ h1 {
 #task-input {
     flex: 1;
     padding: 12px 16px;
-    border: 2px solid #e0e0e0;
+    border: 2px solid var(--primary-light-grey);
     border-radius: 8px;
     font-size: 16px;
     transition: border-color 0.2s ease;
@@ -39,14 +56,14 @@ h1 {
 
 #task-input:focus {
     outline: none;
-    border-color: #ff69b4;
-    box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.2);
+    border-color: var(--primary-pink);
+    box-shadow: 0 0 0 3px var(--primary-faded-pink);
 }
 
 #add-task-button {
     padding: 12px 24px;
-    background-color: #ff69b4;
-    color: white;
+    background-color: var(--primary-pink);
+    color: var(--primary-white);
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -56,7 +73,7 @@ h1 {
 }
 
 #add-task-button:hover {
-    background-color: #ff1493;
+    background-color: var(--primary-dark-pink);
 }
 
 #task-list {
@@ -66,14 +83,14 @@ h1 {
 }
 
 #task-list li {
-    background: white;
+    background: var(--primary-faded-yellow);
     margin: 8px 0;
     padding: 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 8px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid var(--primary-white);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -93,19 +110,19 @@ h1 {
 }
 
 #task-list button:first-of-type {
-    background-color: #32CD32;
-    color: white;
+    background-color: var(--primary-green);
+    color: var(--primary-white);
 }
 
 #task-list button:last-of-type {
-    background-color: #444;
-    color: white;
+    background-color: var(--primary-black);
+    color: var(--primary-white);
 }
 
 #task-list button:first-of-type:hover {
-    background-color: #228B22;
+    background-color: var(--primary-faded-green);
 }
 
 #task-list button:last-of-type:hover {
-    background-color: #333;
+    background-color: var(--primary-dark-grey);
 }
